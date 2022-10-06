@@ -1,8 +1,9 @@
+import { Button } from '@mui/material'
 import React from 'react'
 
-function Btn() {
+function Btn(props) {
   return (
-    <div>Btn</div>
+    <Button  variant={props.variant} style={{marginTop:props.margin,width:props.width}}  startIcon={props.icon} >{props.text}</Button>
   )
 }
 

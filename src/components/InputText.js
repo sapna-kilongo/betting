@@ -3,8 +3,8 @@ import {TextField} from "@mui/material"
 
 function InputText(props) {
   return (
-    <div>
-       <TextField in label={props.label} variant={props.variant} />
+    <div style={{marginTop:props.margin,width:props.width}}   >
+       <TextField fullWidth style={{width:props.width}}  label={props.label} variant={props.variant} />
     </div>
   )
 }
